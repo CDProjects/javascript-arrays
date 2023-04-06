@@ -8,4 +8,4 @@ brass.push('flugelhorn');
 
 const numbers = [10, 20, 30, 40]
 
-console.log(Math.max(numbers));
+console.log(Math.max(...numbers));
