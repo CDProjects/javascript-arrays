@@ -14,3 +14,9 @@ function createListItems(arr) {
     }
     return items;
 };
+
+document.querySelector('main').innerHTML = `
+    <ol>
+    ${createListItems(playlist)}
+    </ol>
+`;
