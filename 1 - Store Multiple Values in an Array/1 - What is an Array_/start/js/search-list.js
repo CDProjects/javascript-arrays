@@ -5,7 +5,7 @@ let message;
 if (inStock.includes(search)) {
     message = `Yes, we have <strong>${search}</strong>.`;
 } else {
-    message = `Sorry, we do not have <strong>${search}</strong>.`;
+    message = `Sorry, we do not have <strong>${search}</strong>. It's ${inStock.indexOf(search)} on the list!`;
 
 }
 
