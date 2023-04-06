@@ -1,3 +1,3 @@
 const instruments = ['piano', 'drums', 'trumpet'];
 
-instruments.push('guitar');
+instruments.push('guitar', 'violin', 'triangle');
