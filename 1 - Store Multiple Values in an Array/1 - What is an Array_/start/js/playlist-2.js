@@ -7,6 +7,9 @@ const playlist = [
   ['The Way You Look Tonight', 'Frank Sinatra', '3:21']
 ];
 
+const myArtists = `${playlist[0][1]}, ${playlist[1][1]}, ${playlist[5][1]}`;
+console.log(myArtists);
+
 function createListItems( arr ) {
   let items = '';
   for ( let i = 0; i < arr.length; i++ ) {
