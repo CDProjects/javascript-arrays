@@ -16,7 +16,7 @@ let correctAns = 0;
       - If the response matches the answer, the number of correctly
         answered questions increments by 1
 */
-
+alert("Welcome to the quiz! Press OK to begin.");
 for (let i = 0; i < questions.length; i++) {
   const question = questions[i][0];
   const answer = questions[i][1];
@@ -29,3 +29,5 @@ const userResponse = prompt("Enter your answer");
 if (userResponse === answer) {
   correctAns++;
 }
+
+alert(`You got ${correctAns} out of ${questions.length} correct!`);
