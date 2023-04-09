@@ -1,5 +1,15 @@
 // 1. Create a multidimensional array to hold quiz questions and answers
-
+const questions = [ 
+  [
+    "How many sides does a square have?"
+  ],
+  [
+    "How many sides does a triangle have?"
+  ],
+  [
+    "How many sides does a hexagon have?"
+  ]
+];
 
 // 2. Store the number of questions answered correctly
 
