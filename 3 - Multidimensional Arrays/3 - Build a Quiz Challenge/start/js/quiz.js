@@ -1,13 +1,13 @@
 // 1. Create a multidimensional array to hold quiz questions and answers
 const questions = [
-  ["How many sides does a square have?"],
-  ["How many sides does a triangle have?"],
-  ["How many sides does a hexagon have?"],
+  ["How many sides does a square have?", "4"],
+  ["How many sides does a triangle have?", "3"],
+  ["How many sides does a hexagon have?", "6"],
 ];
 
-const answers = [[4], [3], [6]];
-
 // 2. Store the number of questions answered correctly
+
+let correctAns = 0;
 
 /* 
   3. Use a loop to cycle through each question
