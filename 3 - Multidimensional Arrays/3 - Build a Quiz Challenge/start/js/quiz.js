@@ -17,4 +17,15 @@ let correctAns = 0;
         answered questions increments by 1
 */
 
+for (let i = 0; i < questions.length; i++) {
+  const question = questions[i][0];
+  const answer = questions[i][1];
+  alert(question);
+}
+
 // 4. Display the number of correct answers to the user
+
+const userResponse = prompt("Enter your answer");
+if (userResponse === answer) {
+  correctAns++;
+}
