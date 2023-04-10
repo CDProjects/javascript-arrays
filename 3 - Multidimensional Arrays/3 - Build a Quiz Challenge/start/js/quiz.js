@@ -27,4 +27,8 @@ for (let i = 0; i < questions.length; i++) {
 }
 
 // 4. Display the number of correct answers to the user
+let html = `
+  <h1>You got ${correctAns} question(s) correct</h1>
+`;
 
+document.querySelector('main').innerHTML = html;
