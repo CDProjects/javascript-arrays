@@ -31,9 +31,22 @@ for (let i = 0; i < questions.length; i++) {
   }
 }
 
+function createListItems(arr) {
+  let items = '';
+  for (let i = 0; i < arr.length; i++) {
+    items += `<li>${arr[i]}</li>`;
+  }
+  return items;
+}
+
 // 4. Display the number of correct answers to the user
 let html = `
   <h1>You got ${correctAns} question(s) correct</h1>
+  <h2>You got these questions right:</h2>
+  <ol>${createListItems(correct)}</ol>
+
+  <h2>You got these questions wrong:</h2>
+  <ol>${createListItems(incorrect)}</ol>
 `;
 
 document.querySelector('main').innerHTML = html;
