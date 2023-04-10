@@ -8,6 +8,8 @@ const questions = [
 // 2. Store the number of questions answered correctly
 
 let correctAns = 0;
+let correct = [];
+let incorrect = [];
 
 /* 
   3. Use a loop to cycle through each question
@@ -23,6 +25,9 @@ for (let i = 0; i < questions.length; i++) {
 
   if (response === answer) {
     correctAns++;
+    correct.push(question);
+  } else {
+    incorrect.push(question);
   }
 }
 
